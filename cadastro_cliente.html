@@ -24,7 +24,7 @@
             <div class="text-center">
                 <h4>Criar conta</h4>
             </div>
-            <form method="POST" class="needs-validation" >
+            <form method="POST" class="needs-validation">
                 <div class="mb-3">
                     <label for="nome" class="form-label">Nome</label>
                     <input type="text" class="form-control" id="nome" >
@@ -33,8 +33,9 @@
                 <div class="mb-3">
                     <label for="sexo">Sexo</label>
                     <select class="form-select" id="sexo">
-                        <option>Feminino</option>
-                        <option>Masculino</option>
+                        <option value="f">Feminino</option>
+                        <option value="m">Masculino</option>
+                        <option value="n">Não binario</option>
                     </select>
                     
                     <!-- <input type="text" class="form-control" id="sexo" > -->
@@ -42,31 +43,25 @@
                 <div class="mb-3">
                     <label for="nascimento">Data de nascimento</label>
                     <input type="date" class="form-control" id="nascimento" >
-                    
                 </div>
-                
                 <div class="mb-3">
                     <label for="cpf">CPF</label>
                     <input type="text" class="form-control" id="cpf" placeholder="000.000.000-00">
-                    
                 </div>
                 <div class="mb-3">
                     <label for="email">Email</label>
                     <input type="email" class="form-control" id="email" placeholder="email@exemplo.com">
-                    
                 </div>
                 <div class="mb-3">
                     <label for="senha">Senha</label>
                     <input type="password" class="form-control" id="senha">
- 
-                    
                 </div>
                 <div class="d-grid gap-2 col-3 mx-auto">
-                    <button class="btn btn-light btn-lg btn-block" type="submit"><a href="login.html">Criar</a></button>
+                    <button class="btn btn-light btn-lg btn-block" type="submit">Criar</button>
                 </div>
             </form>
             <div class="text-danger"> <!-- Essa classe só ta para destacar o texto enquanto n arrumamos o botão-->
-                <button id="NaoPossui" class="text-danger btn" type="button">Já tem uma conta?</button> <br>
+                <a href="login.html" class="text-danger text-decoration-none">Já tem uma conta?</a>
                 <div id="contas"></div>
             </div>
         </div>
